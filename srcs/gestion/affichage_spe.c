@@ -12,7 +12,7 @@
 
 #include "../../includes/ft_printf.h"
 
-int		flag_zero_spe(t_list struc)
+int	flag_zero_spe(t_list struc)
 {
 	int	res;
 
@@ -27,7 +27,7 @@ int		flag_zero_spe(t_list struc)
 	return (res);
 }
 
-int		flag_less_spe(t_list struc)
+int	flag_less_spe(t_list struc)
 {
 	int	res;
 
@@ -42,7 +42,7 @@ int		flag_less_spe(t_list struc)
 	return (res);
 }
 
-int		no_flag_spe(t_list struc)
+int	no_flag_spe(t_list struc)
 {
 	int	res;
 
@@ -57,7 +57,7 @@ int		no_flag_spe(t_list struc)
 	return (res);
 }
 
-int		affichage_spe(t_list struc)
+int	affichage_spe(t_list struc)
 {
 	int	res;
 

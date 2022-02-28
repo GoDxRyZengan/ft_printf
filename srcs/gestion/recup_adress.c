@@ -32,7 +32,7 @@ char	gestion_flag_p(const char *params, int index, t_list struc)
 	return (struc.flag);
 }
 
-int		gestion_width_p(const char *params, int index, va_list ap, t_list struc)
+int	gestion_width_p(const char *params, int index, va_list ap, t_list struc)
 {
 	int	nb;
 
@@ -51,7 +51,7 @@ int		gestion_width_p(const char *params, int index, va_list ap, t_list struc)
 	return (struc.width);
 }
 
-int		gestion_prec_p(const char *params, int index, va_list ap, t_list struc)
+int	gestion_prec_p(const char *params, int index, va_list ap, t_list struc)
 {
 	int	nb;
 
@@ -73,7 +73,7 @@ int		gestion_prec_p(const char *params, int index, va_list ap, t_list struc)
 	return (struc.prec);
 }
 
-int		recup_adress(const char *params, int index, va_list ap, t_list struc)
+int	recup_adress(const char *params, int index, va_list ap, t_list struc)
 {
 	int	res;
 

@@ -12,7 +12,7 @@
 
 #include "../includes/ft_printf.h"
 
-int			nb_cara(long long int nb)
+int	nb_cara(long long int nb)
 {
 	int		i;
 
@@ -27,7 +27,7 @@ int			nb_cara(long long int nb)
 	return (i);
 }
 
-int			spec_case_no_flag(t_list struc, long long int nb, int size)
+int	spec_case_no_flag(t_list struc, long long int nb, int size)
 {
 	int		res;
 
@@ -52,7 +52,7 @@ int			spec_case_no_flag(t_list struc, long long int nb, int size)
 	return (res);
 }
 
-int			spec_case_flag_less(t_list struc, long long int nb, int size)
+int	spec_case_flag_less(t_list struc, long long int nb, int size)
 {
 	int		res;
 
@@ -74,7 +74,7 @@ int			spec_case_flag_less(t_list struc, long long int nb, int size)
 	return (res);
 }
 
-int			spec_case_flag_zero(t_list struc, long long int nb, int size)
+int	spec_case_flag_zero(t_list struc, long long int nb, int size)
 {
 	int		res;
 
@@ -90,7 +90,7 @@ int			spec_case_flag_zero(t_list struc, long long int nb, int size)
 	return (res);
 }
 
-int			spec_case_2(t_list struc, long long int nb, int size)
+int	spec_case_2(t_list struc, long long int nb, int size)
 {
 	int		res;
 

@@ -18,7 +18,7 @@
 # include <stdarg.h>
 # include <limits.h>
 
-typedef struct	s_list
+typedef struct s_list
 {
 	char		flag;
 	int			width;
@@ -50,14 +50,14 @@ void			ft_putnbr_hexa_maj(int nb);
 void			ft_putchar(char c);
 int				ft_printf(const char *params, ...);
 int				recup_spe(const char *params, int index, va_list ap,
-				t_list struc);
+					t_list struc);
 int				recup_int(const char *params, int index, va_list ap,
-				t_list struc);
+					t_list struc);
 int				recup_cara(const char *params, int index, va_list ap,
-				t_list struc);
+					t_list struc);
 int				recup_str(const char *params, int index, va_list ap,
-				t_list struc);
+					t_list struc);
 int				recup_adress(const char *params, int index, va_list ap,
-				t_list struc);
+					t_list struc);
 
 #endif

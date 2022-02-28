@@ -12,7 +12,7 @@
 
 #include "../includes/ft_printf.h"
 
-int			end_print(const char *params, int index)
+int	end_print(const char *params, int index)
 {
 	while (params[index] != 'c' && params[index] != 's'
 		&& params[index] != 'p' && params[index] != 'd'
@@ -24,7 +24,7 @@ int			end_print(const char *params, int index)
 	return (index);
 }
 
-char		check_def(const char *params, int index)
+char	check_def(const char *params, int index)
 {
 	char	def;
 
@@ -41,7 +41,7 @@ char		check_def(const char *params, int index)
 	return (def);
 }
 
-int			gestion_print(const char *params, int index, va_list ap)
+int	gestion_print(const char *params, int index, va_list ap)
 {
 	t_list	struc;
 	int		res;
@@ -66,7 +66,7 @@ int			gestion_print(const char *params, int index, va_list ap)
 	return (res);
 }
 
-int			ft_printf(const char *params, ...)
+int	ft_printf(const char *params, ...)
 {
 	va_list	ap;
 	int		index;

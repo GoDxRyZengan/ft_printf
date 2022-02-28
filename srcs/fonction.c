@@ -13,12 +13,12 @@
 #include "../includes/ft_printf.h"
 #include <limits.h>
 
-void					ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void					ft_putnbr(long long int nb)
+void	ft_putnbr(long long int nb)
 {
 	if (nb < 0)
 	{
@@ -30,7 +30,7 @@ void					ft_putnbr(long long int nb)
 	ft_putchar(nb % 10 + 48);
 }
 
-void					ft_putnbr_hexa_min(int nb)
+void	ft_putnbr_hexa_min(int nb)
 {
 	long long int		i;
 	long long int		neg;
@@ -50,7 +50,7 @@ void					ft_putnbr_hexa_min(int nb)
 		ft_putchar(i % 16 + 87);
 }
 
-void					ft_putnbr_hexa_maj(int nb)
+void	ft_putnbr_hexa_maj(int nb)
 {
 	long long int		i;
 	long long int		neg;
@@ -70,7 +70,7 @@ void					ft_putnbr_hexa_maj(int nb)
 		ft_putchar(i % 16 + 55);
 }
 
-int						nb_cara_adress(unsigned long long nb)
+int	nb_cara_adress(unsigned long long nb)
 {
 	int					res;
 	unsigned long long	neg;

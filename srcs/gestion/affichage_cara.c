@@ -12,7 +12,7 @@
 
 #include "../../includes/ft_printf.h"
 
-int		flag_zero_c(t_list struc, int c)
+int	flag_zero_c(t_list struc, int c)
 {
 	int	res;
 
@@ -27,7 +27,7 @@ int		flag_zero_c(t_list struc, int c)
 	return (res);
 }
 
-int		flag_less_c(t_list struc, int c)
+int	flag_less_c(t_list struc, int c)
 {
 	int	res;
 
@@ -42,7 +42,7 @@ int		flag_less_c(t_list struc, int c)
 	return (res);
 }
 
-int		no_flag_c(t_list struc, int c)
+int	no_flag_c(t_list struc, int c)
 {
 	int	res;
 
@@ -57,7 +57,7 @@ int		no_flag_c(t_list struc, int c)
 	return (res);
 }
 
-int		affichage_cara(t_list struc, va_list ap)
+int	affichage_cara(t_list struc, va_list ap)
 {
 	int	c;
 	int	res;

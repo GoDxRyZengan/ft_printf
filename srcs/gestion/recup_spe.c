@@ -32,7 +32,7 @@ char	gestion_flag_spe(const char *params, int index, t_list struc)
 	return (struc.flag);
 }
 
-int		g_w_spe(const char *params, int index, va_list ap, t_list struc)
+int	g_w_spe(const char *params, int index, va_list ap, t_list struc)
 {
 	int	nb;
 
@@ -51,7 +51,7 @@ int		g_w_spe(const char *params, int index, va_list ap, t_list struc)
 	return (struc.width);
 }
 
-int		recup_spe(const char *params, int index, va_list ap, t_list struc)
+int	recup_spe(const char *params, int index, va_list ap, t_list struc)
 {
 	int	res;
 

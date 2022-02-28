@@ -12,7 +12,7 @@
 
 #include "../../includes/ft_printf.h"
 
-int							f_l_p(t_list struc, unsigned long long nb, int size)
+int	f_l_p(t_list struc, unsigned long long nb, int size)
 {
 	int						res;
 
@@ -34,7 +34,7 @@ int							f_l_p(t_list struc, unsigned long long nb, int size)
 	return (res);
 }
 
-int							n_f_p(t_list struc, unsigned long long nb, int size)
+int	n_f_p(t_list struc, unsigned long long nb, int size)
 {
 	int						res;
 
@@ -56,7 +56,7 @@ int							n_f_p(t_list struc, unsigned long long nb, int size)
 	return (res);
 }
 
-int							f_z_p(t_list struc, unsigned long long nb, int size)
+int	f_z_p(t_list struc, unsigned long long nb, int size)
 {
 	int						res;
 
@@ -77,7 +77,7 @@ int							f_z_p(t_list struc, unsigned long long nb, int size)
 	return (res);
 }
 
-int							spec_case_p(t_list struc, int nb, int size)
+int	spec_case_p(t_list struc, int nb, int size)
 {
 	int						res;
 
@@ -92,13 +92,13 @@ int							spec_case_p(t_list struc, int nb, int size)
 	return (res);
 }
 
-int							affichage_adress(t_list struc, va_list ap)
+int	affichage_adress(t_list struc, va_list ap)
 {
 	int						res;
 	int						size;
 	unsigned long long int	nb;
 
-	nb = (unsigned long long)va_arg(ap, void*);
+	nb = (unsigned long long)va_arg(ap, void *);
 	size = nb_cara_adress(nb);
 	if (struc.width >= 2)
 		struc.width = struc.width - 2;

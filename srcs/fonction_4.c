@@ -12,7 +12,7 @@
 
 #include "../includes/ft_printf.h"
 
-int					nb_cara_hexa(int nb)
+int	nb_cara_hexa(int nb)
 {
 	int				res;
 	long long int	tmp;
@@ -34,10 +34,10 @@ int					nb_cara_hexa(int nb)
 	return (res);
 }
 
-int					end_width(const char *str, int index)
+int	end_width(const char *str, int index)
 {
 	while ((str[index] >= '0' && str[index] <= '9')
-				|| str[index] == '*')
+		|| str[index] == '*')
 		index++;
 	return (index);
 }

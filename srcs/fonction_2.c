@@ -12,7 +12,7 @@
 
 #include "../includes/ft_printf.h"
 
-size_t					ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t				a;
 
@@ -22,17 +22,16 @@ size_t					ft_strlen(const char *s)
 	return (a);
 }
 
-char					*ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	char				*cpy;
 	int					a;
 
 	a = 0;
-	if (!s1 || s1 == NULL)
-		return (NULL);
 	while (s1[a])
 		a++;
-	if (!(cpy = (char*)malloc(sizeof(char) * (a + 1))))
+	cpy = (char *)malloc(sizeof(char) * (a + 1));
+	if (!cpy)
 		return (NULL);
 	a = 0;
 	while (s1[a])
@@ -44,7 +43,7 @@ char					*ft_strdup(const char *s1)
 	return (cpy);
 }
 
-void					ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
 	int					i;
 
@@ -56,7 +55,7 @@ void					ft_putstr(char *str)
 	}
 }
 
-char					*ajust_str(t_list struc, char *str)
+char	*ajust_str(t_list struc, char *str)
 {
 	int					i;
 
@@ -72,7 +71,7 @@ char					*ajust_str(t_list struc, char *str)
 	return (str);
 }
 
-void					ft_putnbr_hexa_adress(unsigned long long nb)
+void	ft_putnbr_hexa_adress(unsigned long long nb)
 {
 	unsigned long long	i;
 	unsigned long long	neg;

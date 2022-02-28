@@ -12,7 +12,7 @@
 
 #include "../../includes/ft_printf.h"
 
-int			no_flag_h(t_list struc, int nb, int size)
+int	no_flag_h(t_list struc, int nb, int size)
 {
 	int		res;
 
@@ -39,7 +39,7 @@ int			no_flag_h(t_list struc, int nb, int size)
 	return (res);
 }
 
-int			flag_zero_h(t_list struc, int nb, int size)
+int	flag_zero_h(t_list struc, int nb, int size)
 {
 	int		res;
 
@@ -62,7 +62,7 @@ int			flag_zero_h(t_list struc, int nb, int size)
 	return (res);
 }
 
-int			flag_less_h(t_list struc, int nb, int size)
+int	flag_less_h(t_list struc, int nb, int size)
 {
 	int		res;
 
@@ -86,7 +86,7 @@ int			flag_less_h(t_list struc, int nb, int size)
 	return (res);
 }
 
-int			spec_case_h(t_list struc, int nb, int size)
+int	spec_case_h(t_list struc, int nb, int size)
 {
 	int		res;
 
@@ -100,7 +100,7 @@ int			spec_case_h(t_list struc, int nb, int size)
 	return (res);
 }
 
-int			affichage_hexa(t_list struc, va_list ap)
+int	affichage_hexa(t_list struc, va_list ap)
 {
 	int		nb;
 	int		size;
